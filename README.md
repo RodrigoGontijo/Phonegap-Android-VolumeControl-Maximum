@@ -1,7 +1,7 @@
 Phonegap-Android-VolumeControl-Maximum
 ==============================
 
-Put all volumes from your app to max.  Cordova / PhoneGap plugin.
+Set all volumes from your app to max.  Cordova / PhoneGap plugin.
 
 Installation:
 -------------
