@@ -1,7 +1,7 @@
 Phonegap-Android-VolumeControl-Maximum
 ==============================
 
-Put all volumes from your app to max.  Create a slider bar or control buttons.  Cordova / PhoneGap plugin.
+Put all volumes from your app to max.  Cordova / PhoneGap plugin.
 
 Installation:
 -------------
@@ -15,12 +15,12 @@ __Example of usage ()__
       <head>
         <script type="text/javascript" charset="utf-8" src="cordova-X.X.X.js"></script>
         <script type="text/javascript" charset="utf-8" src="jquery.js"></script>
-        <script type="text/javascript" charset="utf-8" src="VolumeControl.js"></script>
+        <script type="text/javascript" charset="utf-8" src="VolumeMax.js"></script>
         <script type="text/javascript" charset="utf-8">
          
           //Set volume to max when click button
-          $('#volDown').bind('click',function(){
-              VolumeControl.setVolume(onVolSuccess, onVolError);
+          $('#volMax').bind('click',function(){
+              VolumeMax.setVolumeMax(onVolSuccess, onVolError);
           });
          
           //Callbacks
@@ -34,6 +34,6 @@ __Example of usage ()__
         </script>
       </head>
       <body>
-        <input type="button" id="volMax" value="Volume Max"/>
+        <input type="button" id="volMax" value="Volume max"/>
       </body>
     </html>
