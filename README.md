@@ -34,6 +34,6 @@ __Example of usage ()__
         </script>
       </head>
       <body>
-        <input type="button" id="volMax" value="Volume down"/>
+        <input type="button" id="volMax" value="Volume Max"/>
       </body>
     </html>

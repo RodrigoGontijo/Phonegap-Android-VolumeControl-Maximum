@@ -27,7 +27,7 @@
             <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
         </config-file>
 
-        <js-module src="www/VolumeMax.js" name="VolumeControl">
+        <js-module src="www/VolumeMax.js" name="VolumeMax">
             <clobbers target="cordova.plugins.VolumeMax" />
         </js-module>
 
