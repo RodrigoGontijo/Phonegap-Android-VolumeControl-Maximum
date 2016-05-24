@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.rodrigo.plugins.volumeMax"
+        version="1.0">
+
+    <name>Android Volume Max Plugin</name>
+
+    <description>
+        Allows setting all volumes from android to max.
+    </description>
+
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="VolumeMax">
+                <param name="android-package" value="com.rodrigo.plugins.volumeMax.VolumeMax" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        </config-file>
+
+        <js-module src="www/VolumeMax.js" name="VolumeControl">
+            <clobbers target="cordova.plugins.VolumeMax" />
+        </js-module>
+
+        <source-file src="src/android/VolumeMax.java" target-dir="src/com/rodrigo/plugins/volumeMax" />
+
+    </platform>
+</plugin>
