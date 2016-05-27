@@ -20,14 +20,14 @@ __Example of usage ()__
          
           //Set volume to max when click button
           $('#volMax').bind('click',function(){
-              VolumeMax.setVolumeMax(onVolSuccess, onVolError);
+              VolumeMax.setVolumeMax(onVolMaxSuccess, onVolMaxError);
           });
          
           //Callbacks
-          function onVolSuccess(){
+          function onVolMaxSuccess(){
               console.log("Volume changed to max");
           }
-          function onVolError(){
+          function onVolMaxError(){
               //Manage Error
           }
          
